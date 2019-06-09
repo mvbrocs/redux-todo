@@ -11,6 +11,12 @@ const Action = {
 };
 
 const ActionCreator = {
+  addTodo: text => {
+    return {
+      type: Action.ADD_TODO,
+      text
+    };
+  },
   toggleTodo: id => {
     return {
       type: Action.TOGGLE_TODO,
